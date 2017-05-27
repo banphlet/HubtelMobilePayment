@@ -62,7 +62,9 @@ var receivedata = {
 # EXTRA INFO
 Ionic 2 developers can use the library by running on a node js server, creating a route and making an  ```http``` request to the Url
 # Running Tests
-``` npm i mocha -g```
-```npm test ```
+``` npm i mocha -g
+      npm test
+```
+
 
 HAPPY HACKING ❤ 

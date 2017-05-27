@@ -2,20 +2,21 @@
   "name": "hubtelmobilepayment",
   "version": "2.0.0",
   "description": "A libray For Hubtel Mobile Payments ",
-  "main": "test.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha test",
     "build-debug": "browserify index.js -o dist/hubtelpayment.js",
     "build": "browserify -g uglifyify index.js -o  dist/mpowerpayment.min.js"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/banphlet/HubtelMobilePayment"
   },
   "author": "Nana Kwame Zoe<banphlet4@gmail.com> (https://github.com/banphlet)",
   "keywords": [
-    "mpower",
+    "hubtel",
     "payment",
-    "mpowerpayment",
+    "hubtelpayment",
     "mobilemoney"
   ],
   "standard": {
@@ -24,9 +25,9 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/banphlet/MpowerPayment/issues"
+    "url": "https://github.com/banphlet/HubtelMobilePayment/issues"
   },
-  "homepage": "https://github.com/banphlet/MpowerPayment",
+  "homepage": "https://github.com/banphlet/HubtelMobilePayment",
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.0",
