@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/banphlet/HubtelMobilePayment.svg?branch=master)](https://travis-ci.org/banphlet/HubtelMobilePayment)
+[![Build Status](https://travis-ci.org/banphlet/HubtelMobilePayment.svg?branch=master)](https://travis-ci.org/banphlet/HubtelMobilePayment) [![Known Vulnerabilities](https://snyk.io/test/github/banphlet/hubtelmobilepayment/badge.svg)](https://snyk.io/test/github/banphlet/hubtelmobilepayment)
 
 # HubtelMobilePayment
 UPGRADED FROM MPOWER PAYMENT
