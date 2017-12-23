@@ -4,9 +4,7 @@
   "description": "A libray For Hubtel Mobile Payments ",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test",
-    "build-debug": "browserify index.js -o dist/hubtelpayment.js",
-    "build": "browserify -g uglifyify index.js -o  dist/mpowerpayment.min.js"
+   
   },
   "repository": {
     "type": "git",
