@@ -1,4 +1,6 @@
-[![Known Vulnerabilities](https://snyk.io/test/github/banphlet/hubtelmobilepayment/badge.svg)](https://snyk.io/test/github/banphlet/hubtelmobilepayment)
+
+[![Build Status](https://travis-ci.org/banphlet/HubtelMobilePayment.svg?branch=master)](https://travis-ci.org/banphlet/HubtelMobilePayment)
+
 # HubtelMobilePayment
 UPGRADED FROM MPOWER PAYMENT
 This is an unofficial NodeJs Library for [Hubtel](https://developers.hubtel.com).
