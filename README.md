@@ -9,9 +9,9 @@ See our [wiki](https://github.com/banphlet/HubtelMobilePayment/wiki) for detaile
 
 
 New Addtions
-1. Online Checkout
-2. Ability to refund Customers
-3. Check status of online transactions
+- `Online Checkout`
+- `Ability to refund Customers`
+- `Check status of online transactions`
 
 # Installation
 ```sh
@@ -28,7 +28,7 @@ Setup Api Keys gotten from hubtel Account.[Hubtel Docs](https://developers.hubte
   merchantaccnumber: 'HM325170009'
   })
   ```
- It is most advicable to put keys in environmental variables.
+ It is most advicable to put keys in environmental variables (.env) .
  # Receive Mobile Money
   After initialization.
   ```
@@ -45,6 +45,7 @@ var receivedata = {
            console.log(data)
         })
  ```
+
 
 See our [wiki](https://github.com/banphlet/HubtelMobilePayment/wiki) for detailed examples
 
