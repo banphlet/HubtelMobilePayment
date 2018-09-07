@@ -35,7 +35,6 @@
   },
   "devDependencies": {
     "body-parser": "^1.17.1",
-    "browserify": "^14.3.0",
     "chai": "^4.1.2",
     "chai-http": "^4.2.0",
     "dotenv": "^6.0.0",
@@ -43,7 +42,6 @@
     "mocha": "^3.5.3",
     "nock": "^9.6.1",
     "prettier": "^1.14.2",
-    "sinon": "^6.2.0",
-    "uglifyify": "^3.0.4"
+    "sinon": "^6.2.0"
   }
 }
