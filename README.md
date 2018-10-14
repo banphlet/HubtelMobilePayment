@@ -21,12 +21,16 @@ npm i --save hubtelmobilepayment
   See Hubtel Documentation for data format. [Hubtel Docs](https://developers.hubtel.com/documentations/merchant-account-api) 
 Setup Api Keys gotten from hubtel Account.[Hubtel Docs](https://developers.hubtel.com/docs/getting-started-with-payments)
 
+
 ### Required Parameters
 |  FIELD   |  TYPE | REQUIRED |  DESCRIPTION |
 |---------|-------|-----------|--------------|
 |clientid| String|  yes     |  clientid obtained from hubtel|
 | secretid | String | yes | secretid obtained from hubtel |
 |merchantaccnumber | String | yes | The merchant number obtained from hubtel |
+
+ It is most advicable to put keys in environmental variables (.env).
+
 
 #### Initialize hubtel instance
 ```javascript
@@ -35,13 +39,11 @@ Setup Api Keys gotten from hubtel Account.[Hubtel Docs](https://developers.hubte
   clientid: 'bxd34kou',
   secretid: 'rfiz45dm',
   merchantaccnumber: 'HM325170009'
-  })
+  }) 
   ```
 
- It is most advicable to put keys in environmental variables (.env) .
-
- #### Receive Mobile Money
-
+ ### Receive Mobile Money
+ 
   After initialization.
 
   ```javascript
