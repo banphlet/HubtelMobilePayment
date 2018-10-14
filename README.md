@@ -8,10 +8,10 @@ See our [wiki](https://github.com/banphlet/HubtelMobilePayment/wiki) for detaile
 
 
 
-New Addtions
-- `Online Checkout`
-- `Ability to refund Customers`
-- `Check status of online transactions`
+New Additions
+- [X] `Online Checkout`
+- [X] `Ability to refund Customers`
+- [X] `Check status of online transactions`
 
 # Installation
 ```sh
@@ -19,20 +19,34 @@ npm i --save hubtelmobilepayment
 ```
 # API configuration
   See Hubtel Documentation for data format. [Hubtel Docs](https://developers.hubtel.com/documentations/merchant-account-api) 
-Setup Api Keys gotten from hubtel Account.[Hubtel Docs](https://developers.hubtel.com/documentations/merchant-account-api)
-```sh
-  var hubtelpayment = require('hubtelmobilepayment');
-  var hubtel_pay = new hubtelpayment({
+Setup Api Keys gotten from hubtel Account.[Hubtel Docs](https://developers.hubtel.com/docs/getting-started-with-payments)
+
+### Required Parameters
+|  FIELD   |  TYPE | REQUIRED |  DESCRIPTION |
+|---------|-------|-----------|--------------|
+|clientid| String|  yes     |  clientid obtained from hubtel|
+| secretid | String | yes | secretid obtained from hubtel |
+|merchantaccnumber | String | yes | The merchant number obtained from hubtel |
+
+#### Initialize hubtel instance
+```javascript
+  const hubtelpayment = require('hubtelmobilepayment');
+  const hubtel_pay = new hubtelpayment({
   clientid: 'bxd34kou',
   secretid: 'rfiz45dm',
   merchantaccnumber: 'HM325170009'
   })
   ```
+
  It is most advicable to put keys in environmental variables (.env) .
- # Receive Mobile Money
+
+ #### Receive Mobile Money
+
   After initialization.
-  ```
-var receivedata = {
+
+  ```javascript
+
+const receivedata = {
   "CustomerName": "Customer Name",
   "CustomerMsisdn": "233264545335",
   "CustomerEmail": "customeremail@gmail.com",
@@ -41,6 +55,7 @@ var receivedata = {
    "PrimaryCallbackUrl": "https://hubtelpayment.herokuapp.com/api/v1/moneycallback",  /////example callback 
   "Description": "T Shirt"
 } 
+
  hubtel_pay.ReceiveMobileMoney(receivedata).then(function(data) {
            console.log(data)
         })
@@ -49,5 +64,8 @@ var receivedata = {
 
 See our [wiki](https://github.com/banphlet/HubtelMobilePayment/wiki) for detailed examples
 
+
+# Test
+`npm test`
 
 HAPPY HACKING ❤ 

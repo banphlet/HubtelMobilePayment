@@ -22,36 +22,31 @@ describe('Hubtel Mobile Tests', _ => {
   })
 
   describe('Config Setup', _ => {
-    let ConfigError
-    before(() => {
-      ConfigError = 'required parameters not provided'
-    })
+    const clientid = 'ewed34d',
+      secretid = '3dsaff3',
+      merchantaccnumber = 'HM34dfsfdf3eere'
 
     it('Should throw error with no secretid', done => {
-      const spyHubtelPay = Object.create({ HubtelPay })
-      const spy = sinon.spy(spyHubtelPay, 'HubtelPay')
-      expect(spy).to.throw(ConfigError)
+      expect(() => new HubtelPay({})).throw('secretid is required')
       done()
     })
 
     it('Should throw error with no clientid', done => {
-      const spyHubtelPay = Object.create({ HubtelPay })
-      const spy = sinon.spy(spyHubtelPay, 'HubtelPay')
-      expect(spy).to.throw(ConfigError)
+      expect(() => new HubtelPay({ secretid })).throw('clientid is required')
       done()
     })
 
     it('Should throw error with no merchantaccnumber', done => {
-      const spyHubtelPay = Object.create({ HubtelPay })
-      const spy = sinon.spy(spyHubtelPay, 'HubtelPay')
-      expect(spy).to.throw(ConfigError)
+      expect(() => new HubtelPay({ secretid, clientid })).throw(
+        'merchantaccnumber is required'
+      )
       done()
     })
 
     it('Should not throw error with all config info', done => {
-      const spyHubtelPay = Object.create({ HubtelPay })
-      const spy = sinon.spy(spyHubtelPay, 'HubtelPay').withArgs(config)
-      expect(spy).to.not.throw(ConfigError)
+      expect(
+        () => new HubtelPay({ secretid, clientid, merchantaccnumber })
+      ).not.throw()
       done()
     })
   })
