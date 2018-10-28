@@ -25,6 +25,7 @@ Setup Api Keys gotten from hubtel Account.[Hubtel Docs](https://developers.hubte
 ### Required Parameters
 |  FIELD   |    TYPE     | REQUIRED    |  DESCRIPTION              |
 |----------|-------------|-------------|---------------------------|
+
 |clientid  |    String   |     yes     |  clientid obtained from hubtel|
 | secretid | String | yes | secretid obtained from hubtel |
 |merchantaccnumber | String | yes | The merchant number obtained from hubtel |
