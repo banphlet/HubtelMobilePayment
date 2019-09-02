@@ -6,7 +6,9 @@
   "scripts": {
     "pretest": "npm run prettier",
     "test": "mocha tests/*.test.js",
-    "prettier": "prettier --print-width 80 --no-semi --single-quote --trailing-comma es5 --write './{,!(node_modules)/**}/*.js'"
+    "prettier": "prettier --print-width 80 --no-semi --single-quote --trailing-comma es5 --write './{,!(node_modules)/**}/*.js'",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -31,7 +33,8 @@
   "license": "MIT",
   "dependencies": {
     "request": "^2.81.0",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "body-parser": "^1.17.1",
@@ -43,5 +46,6 @@
     "nock": "^10.0.6",
     "prettier": "^1.14.2",
     "sinon": "^7.2.4"
-  }
+  },
+  "snyk": true
 }
