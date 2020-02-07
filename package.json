@@ -47,5 +47,6 @@
     "prettier": "^1.14.2",
     "sinon": "^7.2.4"
   },
-  "snyk": true
+  "snyk": true,
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
