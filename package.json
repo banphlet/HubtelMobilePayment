@@ -34,7 +34,7 @@
   "dependencies": {
     "request": "^2.81.0",
     "request-promise": "^4.2.2",
-    "snyk": "^1.231.0"
+    "snyk": "^1.685.0"
   },
   "devDependencies": {
     "body-parser": "^1.17.1",
