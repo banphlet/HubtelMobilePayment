@@ -7,7 +7,7 @@
     "pretest": "npm run prettier",
     "test": "mocha tests/*.test.js",
     "prettier": "prettier --print-width 80 --no-semi --single-quote --trailing-comma es5 --write './{,!(node_modules)/**}/*.js'",
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "snyk-protect",
     "prepublish": "npm run snyk-protect"
   },
   "repository": {
@@ -34,7 +34,7 @@
   "dependencies": {
     "request": "^2.81.0",
     "request-promise": "^4.2.2",
-    "snyk": "^1.231.0"
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "body-parser": "^1.17.1",
@@ -48,5 +48,7 @@
     "sinon": "^7.2.4"
   },
   "snyk": true,
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
